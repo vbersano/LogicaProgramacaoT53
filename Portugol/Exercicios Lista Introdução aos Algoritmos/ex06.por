@@ -6,23 +6,29 @@ programa
 	
 	funcao inicio()
 	{
-		inteiro r, s, d, a, b, c	
+		real x1, x2, y1, y2, d, r, s
 
-		escreva("Atribua um valor para A: ")
-		leia(a)
-		escreva("Atribua um valor para B: ")
-		leia(b)
-		escreva("Atribua um valor para C: ")
-		leia(c)
+		escreva("Para achar a distancia entre dois pontos, defina as seguintes coordenadas:\n")
 		
-		r = mat.potencia(a+b, 2)
-		//r = (a+b)^2
-		s = mat.potencia(b+c, 2)
-		//s = (b+c)^2
-	
-		d = (r+s)/2
+		escreva("Defina x1: ")
+		leia(x1)
 
-		escreva("Resultado da expressão: ", d)
+		escreva("Defina x2: ")
+		leia(x2)
+
+		escreva("Defina y1: ")
+		leia(y1)
+
+		escreva("Defina y2: ")
+		leia(y2)
+		
+		r = mat.potencia(x1-x2, 2)
+		s = mat.potencia(y1-y2, 2)
+
+		d = mat.raiz(r+s, 2)
+
+		escreva("A distância linear entre os dois pontos é: ", d)
+			
 		
 	}
 }
@@ -31,7 +37,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 464; 
+ * @POSICAO-CURSOR = 544; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;

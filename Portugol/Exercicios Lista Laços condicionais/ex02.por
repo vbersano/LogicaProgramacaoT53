@@ -16,7 +16,7 @@ programa
 		leia(N)
 		
 		se (N>50) {
-			E=N%50
+			E=N-50
 			M=20*E
 			
 			escreva("Excedente de horas: ", E, " hrs", "\nO excedente a ser pago é de: " + "R$ ", M,"\n")
@@ -33,7 +33,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 605; 
+ * @POSICAO-CURSOR = 441; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;

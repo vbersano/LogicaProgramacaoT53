@@ -1,21 +1,23 @@
 //Feito por: Vinicius Bersano. T53 Java Web Generation Brasil
 programa
 {
-	inclua biblioteca Matematica --> mat
 	
 	funcao inicio()
 	{
-		inteiro input, i, pot
-		pot=-1
+		para (inteiro contador = 233; contador <= 456; contador++) {
+			//escreva(contador, "\n")
+			se (contador < 300) {
+				escreva(contador, "\n")
+			}
+						
+			se (contador >= 300 e contador <400 e contador%3==0) {
+				escreva(contador, "z\n")
+			}
+			se (contador >= 400 e contador%5==0) {
+				escreva(contador, "m\n")
+			}
 		
-		input=5
-		//leia(input)
-		
-		faca 
-		{
-			i = mat.potencia(3, pot++)*input
-			escreva(i,"\n")
-		} enquanto (i<100)
+		}
 	}
 }
 /* $$$ Portugol Studio $$$ 
@@ -23,7 +25,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 205; 
+ * @POSICAO-CURSOR = 61; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;

@@ -5,16 +5,18 @@ programa
 	
 	funcao inicio()
 	{
-		inteiro Matrix[3][3], gerarValor
+		inteiro Matrix[3][3], gerarValor, somaDiagonal=0
 
+		escreva("\n\nDiagonal da Matriz\n\n")
 		para(inteiro linha = 0; linha <3; linha++){
 			para(inteiro coluna = 0; coluna <3; coluna++){
 
 				gerarValor= Util.sorteia(0, 10)
 				Matrix[linha][coluna]=gerarValor
+			
 				se (linha==coluna) {
 					escreva("[",Matrix[linha][coluna],"]")
-				} senao {
+				}senao{
 					escreva("[X]")
 				}
 				
@@ -22,7 +24,17 @@ programa
 			escreva("\n")
 		}
 
+		//Soma dos Elementos na Diagonal da Matriz
+		para(inteiro linha = 0; linha <3; linha++){
+			para(inteiro coluna = 0; coluna <3; coluna++){
+				se(linha==coluna){
+					somaDiagonal+=Matrix[linha][coluna]		
+				} 
+			}
+		}
+		escreva("\n\nSoma dos Elementos na Diagonal da Matriz: [", somaDiagonal,"]\n\n")
 
+		//fim do programa
 		
 	}
 }
@@ -31,7 +43,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 296; 
+ * @POSICAO-CURSOR = 850; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = {Matrix, 8, 10, 6};
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
